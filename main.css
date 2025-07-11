@@ -1,0 +1,425 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background: #463e3f;
+    color: #ffffff;
+    padding: 4rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+nav {
+    background:#ffffff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, transform 0.3s;
+}
+
+nav a:hover {
+    color: #0071e3;
+    transform: scale(1.1);
+}
+
+.business-card {
+    background: white;
+    padding: 30px;
+    margin: 30px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+
+}
+
+.business-card:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    background: #1a1a1a;
+    color: white;
+    padding: 2rem;
+    font-size: 1rem;
+}
+
+.skill-text{
+    border: 1px solid black;
+    margin-inline-start: 20rem;
+    margin-inline-end: 20rem;
+    box-shadow: 0px 5px 15px black;
+    font-size: larger;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center; /* Zentriert das Bild und den Text vertikal */
+    gap: 20px; /* Abstand zwischen Bild und Text */
+}
+
+.Leon {
+    width: 300px;
+    flex-shrink: 0; /* Verhindert, dass das Bild skaliert */
+    border: 1px solid grey;
+}
+
+.text-container {
+   display: flex;
+   flex-wrap: wrap;
+   text-align: center;
+}
+
+/* Grundlegendes Styling */
+nav {
+    position: relative;
+    background-color: #333;
+    padding: 15px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.menu li {
+    padding: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Burger-Icon */
+.menu-toggle {
+    width: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bar {
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    margin: 5px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Animation des Menü-Icons */
+.menu-toggle.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Logo kleiner machen, links ausrichten und rund */
+.youtube {
+    width: 50px; /* Größe des Logos */
+    height: 50px;
+    border-radius: 50%; /* Rundes Logo */
+    position: fixed; /* Fixiert das Logo an einer festen Stelle */
+    right: 20px; /* Abstand vom rechten Rand */
+    top: 50%; /* In der Mitte des Bildschirms */
+    transform: translateY(-50%); /* Exakte Zentrierung */
+    border: 2px solid #ccc; /* Optionaler Rand */
+    cursor: pointer; /* Zeigt an, dass es klickbar ist */
+}
+
+li{
+    display: flex;
+}
+
+.projects{
+    background-color: var(--bg-color);
+    padding: 32px 0;
+    margin-top: 2rem;
+}
+
+.project-pic{
+    width: 65%;
+    height: 60%;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+}
+
+.projects-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-container{
+    text-align: center;
+    width: 21.875rem;
+    padding: 1rem;
+}
+
+.project-container p{
+    padding: 0.4rem;
+}
+
+.project-container{
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    padding: 20px;
+    margin: 10px;
+}
+
+.projects-title{
+    font-size: 30px;
+}
+
+.icon-card{
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    padding: 20px;
+    margin: 10px;
+}
+
+.skills-header{
+    font-size: 30px;
+}
+
+/* .{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #dbe5db; /* hellgrau-grün */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; */
+    
+/* } */
+
+    .kontakt-box {
+      background-color: #4c6358; /* dunkles grün-grau */
+      padding: 40px;
+      border-radius: 15px;
+      width: 350px;
+      color: white;
+    }
+
+    .kontakt-box h2 {
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
+
+    .kontakt-box input,
+    .kontakt-box textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-bottom: 2px solid #a5b2a3;
+      background-color: transparent;
+      color: white;
+      font-size: 14px;
+    }
+
+    .kontakt-box input::placeholder,
+    .kontakt-box textarea::placeholder {
+      color: #c9d4c6;
+    }
+
+    .kontakt-box input:focus,
+    .kontakt-box textarea:focus {
+      outline: none;
+      border-bottom: 2px solid #d0e0ce;
+    }
+
+    .kontakt-box button {
+      width: 100%;
+      padding: 12px;
+      background-color: #a8c3a3; /* heller grün-grau */
+      border: none;
+      color: #2d3b34;
+      font-weight: bold;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+.legal-text {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+.legal-text h2, .legal-text h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.legal-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+nav{
+    background-color: #2e2829;
+    color: white;
+}
+
+.fot{
+    background-color: skyblue;
+}
+
+.contact-info a {
+    color: #0073e6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+footer{
+    /* position: fixed; */
+    
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.cookie-banner {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+.cookie-banner {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    z-index: 9999; /* Sehr hohe Zahl, damit der Banner über allem bleibt */
+}
+
+.cookie-banner p {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.cookie-banner button {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cookie-banner button:hover {
+    background-color: #005bb5;
+}
+
